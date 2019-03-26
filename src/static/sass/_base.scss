@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-size: 12px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: $text-gray;
+}
+.base-button {
+    padding: 10px 25px;
+    border: 0;
+    // letter-spacing: 1.7px;
+    // font-size: 12px;
+    // font-family: Raleway;
+    // font-weight: bold;
+    text-transform: uppercase;
+    background-color: $turquoise;
+    color: white;
+    cursor: pointer;
+
+}
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: $laptopLg) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (max-width: $mobile) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

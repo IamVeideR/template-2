@@ -1,10 +1,7 @@
-.slider-item {
-    background-color: yellow;
-    padding: 20px;
-    margin-left: 20px;
-}
-p {
-    color: darkblue;
-}
-
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'base';
+@import 'style';
 @import 'libs';
+
