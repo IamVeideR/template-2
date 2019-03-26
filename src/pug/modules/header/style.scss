@@ -1,0 +1,25 @@
+.header {
+    &__container {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            margin-left: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        &__link {
+            padding: 6px;
+        }
+    }
+}
