@@ -32,6 +32,7 @@
   "homepage": "https://github.com/IamVeideR/template-2#readme",
   "description": "",
   "dependencies": {
+    "jade": "^1.11.0",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1"
   }

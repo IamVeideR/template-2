@@ -1,0 +1,33 @@
+mixin footerMenuLink(name, href)
+    li.footer__menu__item
+        a(href=href).footer__menu__link= name
+mixin footerSocialsLink(name, href)
+    li.footer__socials__item
+        a(href=href).footer__socials__link= name        
+
+.footer
+    .footer__container.container
+        .footer__copyright
+            p.footer__copyright__title: h2 Piroll Design, Inc.
+            p.footer__copyright__rights © 2017 Piroll. All rights reserved.
+            p.footer__copyright__designed Designed by robirurk.
+        .footer__contacts
+            p.footer__contacts__email hello@pirolltheme.com 
+            p.footer__contacts__phone +44 987 065 908
+        .footer__menu
+            ul.footer__menu__list
+                +footerMenuLink('Projects', '#') 
+                +footerMenuLink('About', '#') 
+                +footerMenuLink('Services', '#') 
+                +footerMenuLink('Carreer', '#') 
+            ul.footer__menu__list
+                +footerMenuLink('News', '#') 
+                +footerMenuLink('Events', '#') 
+                +footerMenuLink('Contact', '#') 
+                +footerMenuLink('Legals', '#') 
+        .footer__socials
+            ul.footer__socials__list
+                +footerSocialsLink('Facebook', '#')  
+                +footerSocialsLink('Twitter', '#') 
+                +footerSocialsLink('Instagram', '#') 
+                +footerSocialsLink('Dribbble', '#') 

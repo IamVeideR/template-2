@@ -1,19 +1,27 @@
-body {
+body{
     font-family: 'Montserrat', sans-serif;
     color: $black;
     font-size: 12px;
 }
+a {
+    color: $black;
+}
 p {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
     color: $text-gray;
 }
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
 .base-button {
-    padding: 10px 25px;
+    padding: 20px 40px;
+    box-sizing: border-box;
     border: 0;
-    // letter-spacing: 1.7px;
-    // font-size: 12px;
-    // font-family: Raleway;
-    // font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
     text-transform: uppercase;
     background-color: $turquoise;
     color: white;
@@ -25,6 +33,7 @@ p {
     max-width: 1160px;
     width: 100%;
     box-sizing: border-box;
+    background-color: $gray;// temporary
 }
 
 @media (max-width: $laptopLg) {
