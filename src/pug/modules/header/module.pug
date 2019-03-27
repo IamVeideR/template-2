@@ -1,19 +1,17 @@
+mixin headerMenuLink(name, href)
+    li.header__menu__item
+        a(class!=attributes.class href=href).header__menu__link= name
+        
 .header
     .header__container.container
         .header__logo
         .header__menu
             ul.header__menu__list
-                li.header__menu__item
-                    a.header__menu__link  Home
-                li.header__menu__item 
-                    a.header__menu__link  About
-                li.header__menu__item 
-                    a.header__menu__link  Work
-                li.header__menu__item 
-                    a.header__menu__link  Process
-                li.header__menu__item 
-                    a.header__menu__link  Services
-                li.header__menu__item 
-                    a.header__menu__link  Testimonials
-                li.header__menu__item 
-                    a.header__menu__link Contact                               
+                +headerMenuLink('Home', '#')(class="active")
+                +headerMenuLink('About', '#')
+                +headerMenuLink('Work', '#')
+                +headerMenuLink('Process', '#')
+                +headerMenuLink('Services', '#')
+                +headerMenuLink('Testimonials', '#')
+                +headerMenuLink('Contact', '#')  
+                                               

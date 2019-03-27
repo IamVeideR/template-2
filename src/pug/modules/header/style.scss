@@ -6,7 +6,6 @@
         align-items: center;
     }
     &__menu {
-
         &__list {
             display: flex;
             justify-content: space-between;
@@ -21,5 +20,12 @@
         &__link {
             padding: 6px;
         }
+        &__link:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .active {
+        color:  $turquoise;
     }
 }
