@@ -8,9 +8,20 @@ html(lang="ru")
         link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Nunito+Sans", rel="stylesheet")
         link(href="./../build/static/css/main.css", rel="stylesheet")  
     body
-        include ../modules/header/module
-        .main.container Hello World
-            p Hello World
-            .base-button Hello World
+        .banner.container
+            include ../modules/header/module
+            .banner__container
+                .banner__data
+                    h1.banner__title We Design and Develop
+                    p.banner__text We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.
+                    a.banner__button.base-button Contact Us
+        
+
+        -
+            var title = {
+                name: 'Our Work Process',
+                text: 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.'
+            }
+        include ../modules/title/module
         include ../modules/footer/module
         script(src="./../build/static/js/main.js")
