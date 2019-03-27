@@ -8,20 +8,41 @@ html(lang="ru")
         link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Nunito+Sans", rel="stylesheet")
         link(href="./../build/static/css/main.css", rel="stylesheet")  
     body
-        .banner.container
+        .banner
             include ../modules/header/module
-            .banner__container
+            .banner__container.container
                 .banner__data
                     h1.banner__title We Design and Develop
                     p.banner__text We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.
                     a.banner__button.base-button Contact Us
-        
-
-        -
-            var title = {
-                name: 'Our Work Process',
-                text: 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.'
-            }
-        include ../modules/title/module
+        .about.container
+            .about__title 
+                h1.about__title__name About Us
+                p.about__title__text Divide have don't man wherein air fourth. Own itself make have night won't make.
+                p.about__title__text A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all. 
+                .about__title__span
+                    .about__title__signature
+        //- mixin for skills list
+        mixin skills(name, percentage)
+            li.skills__item
+                p.skills__name= name
+                p.skills__percentage= percentage
+                .skills__diagram
+                    .skills__diagram__percentage(style="width: "+percentage)
+        //- end of mixin
+        .skills
+            .skills__container.container
+                .skills__data
+                    h1.skills__title Professional Skills
+                    ul.skills__list
+                        +skills('UI/UX Design', '75%')
+                        +skills('Web Development', '90%')
+                        +skills('Marketing', '65%')  
+        //- -
+        //-     var title = {
+        //-         name: 'Our Work Process',
+        //-         text: 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.'
+        //-     }
+        //- include ../modules/title/module
         include ../modules/footer/module
         script(src="./../build/static/js/main.js")
