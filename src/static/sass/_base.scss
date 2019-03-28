@@ -26,7 +26,9 @@ h1 {
     background-color: $turquoise;
     color: white;
     cursor: pointer;
-
+}
+.base-button:hover {
+    background-color: $darkturquoise;
 }
 .container {
     margin: 0 auto;
@@ -35,15 +37,15 @@ h1 {
     box-sizing: border-box;
 }
 
-@media (max-width: $laptopLg) {
+@media (max-width: $desktop) {
     .container {
         padding-right: 15px;
         padding-left: 15px;
     }
 }
-@media (max-width: $mobile) {
+@media (max-width: $mobileL) {
     .container {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }

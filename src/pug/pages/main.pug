@@ -25,8 +25,9 @@ html(lang="ru")
         //- mixin for skills list
         mixin skills(name, percentage)
             li.skills__item
-                p.skills__name= name
-                p.skills__percentage= percentage
+                .skills__item__data
+                    .skills__name= name 
+                    .skills__percentage= percentage
                 .skills__diagram
                     .skills__diagram__percentage(style="width: "+percentage)
         //- end of mixin
@@ -38,6 +39,11 @@ html(lang="ru")
                         +skills('UI/UX Design', '75%')
                         +skills('Web Development', '90%')
                         +skills('Marketing', '65%')  
+        include ../modules/numbers/module
+        .work
+            .work__works
+            .work__load
+                a.work__load__link Load More Work
         //- -
         //-     var title = {
         //-         name: 'Our Work Process',
