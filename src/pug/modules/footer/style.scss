@@ -8,6 +8,7 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__contacts {
         padding-left: 150px;
@@ -15,6 +16,7 @@
     &__menu {
         display: flex;
         justify-content: space-between; 
+        flex-wrap: wrap;
         padding-left: 50px;
 
         &__list {
