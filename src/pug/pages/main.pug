@@ -25,8 +25,9 @@ html(lang="ru")
         //- mixin for skills list
         mixin skills(name, percentage)
             li.skills__item
-                p.skills__name= name
-                p.skills__percentage= percentage
+                .skills__item__data
+                    .skills__name= name 
+                    .skills__percentage= percentage
                 .skills__diagram
                     .skills__diagram__percentage(style="width: "+percentage)
         //- end of mixin
@@ -38,11 +39,117 @@ html(lang="ru")
                         +skills('UI/UX Design', '75%')
                         +skills('Web Development', '90%')
                         +skills('Marketing', '65%')  
-        //- -
-        //-     var title = {
-        //-         name: 'Our Work Process',
-        //-         text: 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.'
-        //-     }
-        //- include ../modules/title/module
+        include ../modules/numbers/module
+        .work
+            .work__works
+                -
+                    var works = {
+                        image: '1'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '2'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '3'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '4'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '5'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '6'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '7'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: '8'
+                    }
+                include ../modules/works/module
+            .work__load
+                a.work__load__link Load More Work
+        .process.container
+            -
+                var title = {
+                    name: 'Our Work Process',
+                    text: 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.'
+                }
+            include ../modules/title/module
+            .process__span
+                .process__video
+        .services
+            .services__container.container
+                - 
+                    var service = {
+                        icon: '1',
+                        title: 'UI / UX Design',
+                        text: 'Be set fourth land god darkness make it wherein own'
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '2',
+                        title: 'Web Development',
+                        text: "A she'd them bring void moving third she'd kind fill"
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '3',
+                        title: 'App / Mobile',
+                        text: "Dominion man second spirit he, earth they're creeping"
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '4',
+                        title: 'Game Design',
+                        text: 'Morning his saying moveth it multiply appear life be'
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '5',
+                        title: 'SEO / Marketing',
+                        text: "Give won't after land fill creeping meat you, may"
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '6',
+                        title: 'Photography',
+                        text: 'Creepeth one seas cattle grass give moving saw give'
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '7',
+                        title: 'Graphic Design',
+                        text: 'Open, great whales air rule for, fourth life whales'
+                    }
+                include ../modules/service/module 
+                - 
+                    var service = {
+                        icon: '8',
+                        title: 'Illustrations',
+                        text: "Whales likeness hath, man kind for them air two won't"
+                    }
+                include ../modules/service/module                 
         include ../modules/footer/module
         script(src="./../build/static/js/main.js")
