@@ -1,0 +1,20 @@
+.testimonial {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    line-height: 36px;
+    box-sizing: border-box;
+
+    &__text {
+        font-size: 24px;
+    }
+    &__author {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 15px;
+        letter-spacing: 1px;
+    }
+}

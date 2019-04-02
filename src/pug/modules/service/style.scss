@@ -1,3 +1,21 @@
 .service {
     width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px 20px;
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: $text-gray;
+        color: $text-gray;
+    }
+    &__title {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
 }
