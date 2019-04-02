@@ -6,7 +6,7 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         title Piroll
         link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Nunito+Sans", rel="stylesheet")
-        link(href="./../build/static/css/main.css", rel="stylesheet")  
+        link(href="./../build/static/css/main.css", rel="stylesheet") 
     body
         .banner
             include ../modules/header/module
@@ -150,6 +150,80 @@ html(lang="ru")
                         title: 'Illustrations',
                         text: "Whales likeness hath, man kind for them air two won't"
                     }
-                include ../modules/service/module                 
+                include ../modules/service/module   
+        .testimonials
+            .testimonials__container.container
+                .testimonials__slider
+                    - 
+                        var testimonial = {
+                            text: '"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap."',
+                            author: 'Michael Hopkins'
+                        }
+                    include ../modules/testimonial/module
+                    - 
+                        var testimonial = {
+                            text: '"It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap. Outstanding job and exceeded all expectations."',
+                            author: 'Hopkins Michael'
+                        }
+                    include ../modules/testimonial/module
+                    - 
+                        var testimonial = {
+                            text: '"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project."',
+                            author: 'Mipkins Hochael'
+                        }
+                    include ../modules/testimonial/module
+        .clients.container 
+            .clients__slider
+                - 
+                    var client = {
+                        image: '#1'
+                    }
+                include ../modules/client/module     
+                - 
+                    var client = {
+                        image: '#2'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#3'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#4'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#5'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#6'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#7'
+                    }
+                include ../modules/client/module
+                - 
+                    var client = {
+                        image: '#8'
+                    }
+                include ../modules/client/module 
+        .order
+            .order__container.container
+                -
+                    var title = {
+                        name: 'Need a Project?',
+                        text: 'Let us know what you`rw looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
+                    }
+                include ../modules/title/module    
         include ../modules/footer/module
+        script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(type="text/javascript" src="./../build/static/js/libs/slick.min.js")
         script(src="./../build/static/js/main.js")

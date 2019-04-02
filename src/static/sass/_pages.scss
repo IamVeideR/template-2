@@ -2,14 +2,13 @@
     background-color: $dark-gray;
 
     &__container {
-        height: 570px;
+        height: 560px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
     &__data {
         width: 45%;
-        min-width: 500px;
         padding-bottom: 100px;
     }
     &__title {
@@ -27,7 +26,7 @@
 }
 
 .about {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     &__title {
         margin: 0 auto;
@@ -60,17 +59,18 @@
 
 .skills {
     background-color: $dark-gray;
-    padding: 100px 0;
+    // padding: 100px 0;
 
     &__container {
-        height: 570px;
+        height: 560px;
         display: flex;
         align-items: center;
     }
     &__data {
         width: 40%;
-        min-width: 500px;
-        padding-top: 40px;
+        padding-top: 30px;
+        padding-right: 10px;
+        box-sizing: border-box;
     }
     &__title {
         padding-bottom: 30px;
@@ -129,7 +129,7 @@
     &__span {
         position: relative;
         width: 100%;
-        padding-bottom: 50%;
+        padding-bottom: 48%;
     }
     &__video {
         position: absolute;
@@ -145,11 +145,39 @@
 
 .services {
     background-color: $dark-gray;
+    padding: 65px 0px;
 
     &__container {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: flex-start;
-        // align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.clients {
+
+    &__slider {
+        .slick-list {}
+    }
+}
+
+.order {
+    background-color: $gray;
+    padding-top: 5px;
+}
+
+.testimonials {
+    height: 490px;
+    background-color: $turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__slider {
+        .slick-list {
+            max-width: 800px;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
     }
 }
