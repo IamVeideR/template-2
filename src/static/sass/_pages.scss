@@ -25,6 +25,21 @@
     }
 }
 
+@media (max-width: $laptop) {
+    .banner {
+        &__data {
+            width: 60%;
+        }
+    }
+}
+@media (max-width: $mobileL) {
+    .banner {
+        &__data {
+            width: 100%;
+        }
+    }
+}
+
 .about {
     padding-bottom: 10px;
 
@@ -59,7 +74,6 @@
 
 .skills {
     background-color: $dark-gray;
-    // padding: 100px 0;
 
     &__container {
         height: 560px;
@@ -100,12 +114,30 @@
     }
 }
 
+@media (max-width: $laptop) {
+    .skills {
+        &__data {
+            width: 60%;
+        }
+    }
+}
+@media (max-width: $mobileL) {
+    .skills {
+        &__data {
+            width: 100%;
+        }
+    }
+}
+
 .work {
     background-color: $gray;
 
     &__works {
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        max-width: $wrap;
     }
 
     &__load {
@@ -122,7 +154,13 @@
         }
     }
 }
-
+@media (max-width: $mobileL) {
+    .skills {
+        &__data {
+            width: 100%;
+        }
+    }
+}
 .process {
     padding-bottom: 100px;
 
@@ -154,16 +192,55 @@
     }
 }
 
-.clients {
-
-    &__slider {
-        .slick-list {}
-    }
-}
 
 .order {
     background-color: $gray;
-    padding-top: 5px;
+
+    &__form {
+        width: 100%;
+        max-width: 670px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    &__input {
+        &__name {
+            width: 48%;
+        }
+        &__mail {
+            width: 48%;
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+    &__textarea {
+        width: 100%;
+        height: 170px;
+    }
+    &__button {
+        margin: 15px auto;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .title {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .order{
+        &__input {
+            &__name {
+                width: 100%;
+            }
+            &__mail {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .testimonials {
@@ -179,5 +256,11 @@
             padding-top: 100px;
             padding-bottom: 70px;
         }
+    }
+    &__text {
+        color: white;
+    }
+    &__author {
+        color: white;
     }
 }

@@ -7,6 +7,7 @@ html(lang="ru")
         title Piroll
         link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Nunito+Sans", rel="stylesheet")
         link(href="./../build/static/css/main.css", rel="stylesheet") 
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
     body
         .banner
             include ../modules/header/module
@@ -15,6 +16,7 @@ html(lang="ru")
                     h1.banner__title We Design and Develop
                     p.banner__text We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.
                     a.banner__button.base-button Contact Us
+        a(name='about')                    
         .about.container
             .about__title 
                 h1.about__title__name About Us
@@ -40,6 +42,7 @@ html(lang="ru")
                         +skills('Web Development', '90%')
                         +skills('Marketing', '65%')  
         include ../modules/numbers/module
+        a(name='work')
         .work
             .work__works
                 -
@@ -84,6 +87,7 @@ html(lang="ru")
                 include ../modules/works/module
             .work__load
                 a.work__load__link Load More Work
+        a(name='process')
         .process.container
             -
                 var title = {
@@ -93,64 +97,66 @@ html(lang="ru")
             include ../modules/title/module
             .process__span
                 .process__video
+        a(name='services')
         .services
             .services__container.container
                 - 
                     var service = {
-                        icon: '1',
+                        icon: 'fas fa-jedi',
                         title: 'UI / UX Design',
                         text: 'Be set fourth land god darkness make it wherein own'
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '2',
+                        icon: 'fas fa-bowling-ball',
                         title: 'Web Development',
                         text: "A she'd them bring void moving third she'd kind fill"
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '3',
+                        icon: 'fas fa-mobile',
                         title: 'App / Mobile',
                         text: "Dominion man second spirit he, earth they're creeping"
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '4',
+                        icon: 'fas fa-gamepad',
                         title: 'Game Design',
                         text: 'Morning his saying moveth it multiply appear life be'
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '5',
+                        icon: 'fas fa-plane',
                         title: 'SEO / Marketing',
                         text: "Give won't after land fill creeping meat you, may"
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '6',
+                        icon: 'fas fa-star',
                         title: 'Photography',
                         text: 'Creepeth one seas cattle grass give moving saw give'
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '7',
+                        icon: 'fas fa-magic',
                         title: 'Graphic Design',
                         text: 'Open, great whales air rule for, fourth life whales'
                     }
                 include ../modules/service/module 
                 - 
                     var service = {
-                        icon: '8',
+                        icon: 'fas fa-fill-drip',
                         title: 'Illustrations',
                         text: "Whales likeness hath, man kind for them air two won't"
                     }
-                include ../modules/service/module   
+                include ../modules/service/module 
+        a(name='testimonials')  
         .testimonials
             .testimonials__container.container
                 .testimonials__slider
@@ -214,6 +220,7 @@ html(lang="ru")
                         image: '#8'
                     }
                 include ../modules/client/module 
+        a(name='contact')
         .order
             .order__container.container
                 -
@@ -221,7 +228,14 @@ html(lang="ru")
                         name: 'Need a Project?',
                         text: 'Let us know what you`rw looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
                     }
-                include ../modules/title/module    
+                include ../modules/title/module  
+                .order__form
+                    form.form(action="#")
+                        input.order__input__name(type="text", name="Name", placeholder="Your Name")
+                        input.order__input__mail(type="text", name="Email", placeholder="Your Email")
+                        input.order__input__title(type="text", name="Title", placeholder="Your Title")
+                        textarea.order__textarea(name="Comment", placeholder="Your Comment")
+                        button.order__button.base-button(type="submit") Send Message
         include ../modules/footer/module
         script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")
         script(type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")

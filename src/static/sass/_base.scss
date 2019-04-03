@@ -1,7 +1,10 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     color: $black;
     font-size: 12px;
+}
+body * {
+    font-family: 'Montserrat', sans-serif;
 }
 a {
     color: $black;
@@ -14,6 +17,16 @@ p {
 h1 {
     font-size: 30px;
     font-weight: bold;
+}
+input, textarea {
+    border: none;
+    box-sizing: border-box;
+    margin: 15px 0px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: $black;
+    resize: none;
 }
 .base-button {
     padding: 20px 40px;
@@ -37,6 +50,9 @@ h1 {
     box-sizing: border-box;
 }
 
+.fas, .far {
+    font-size: 36px;
+}
 @media (max-width: $desktop) {
     .container {
         padding-right: 15px;
