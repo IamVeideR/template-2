@@ -5,13 +5,14 @@ mixin headerMenuLink(name, href)
 .header
     .header__container.container
         .header__logo
+            i.header__logo__icon.far.fa-gem
         .header__menu
             ul.header__menu__list
                 +headerMenuLink('Home', '#')(class="active")
-                +headerMenuLink('About', '#')
-                +headerMenuLink('Work', '#')
-                +headerMenuLink('Process', '#')
-                +headerMenuLink('Services', '#')
-                +headerMenuLink('Testimonials', '#')
-                +headerMenuLink('Contact', '#')  
+                +headerMenuLink('About', '#about')
+                +headerMenuLink('Work', '#work')
+                +headerMenuLink('Process', '#process')
+                +headerMenuLink('Services', '#services')
+                +headerMenuLink('Testimonials', '#testimonials')
+                +headerMenuLink('Contact', '#contact')  
                                                

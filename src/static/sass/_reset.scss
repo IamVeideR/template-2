@@ -52,7 +52,7 @@ button {
 	padding: 0;
 	cursor: pointer;
 }
-button:focus {
+button:focus, div:focus, input, textarea {
 	outline: 0;
 }
 

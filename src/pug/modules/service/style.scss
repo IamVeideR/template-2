@@ -7,8 +7,8 @@
     &__icon {
         width: 50px;
         height: 50px;
+        font-size: 50px;
         margin: 0 auto;
-        background-color: $text-gray;
         color: $text-gray;
     }
     &__title {
@@ -18,4 +18,15 @@
         font-weight: bold;
     }
 
+}
+
+@media (max-width: $laptopXs) {
+    .service {
+        width: 50%;
+    }
+}
+@media (max-width: $mobileL) {
+    .service {
+        width: 100%;
+    }
 }
