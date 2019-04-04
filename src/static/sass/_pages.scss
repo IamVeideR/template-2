@@ -1,5 +1,6 @@
 .banner {
-    background-color: $dark-gray;
+    background: url(./../img/banner.jpg) 60% no-repeat;
+    background-size: cover;
 
     &__container {
         height: 560px;
@@ -67,13 +68,16 @@
             height: 100%;
             overflow: hidden;
             object-fit: cover;
-            background-color: $gray;
+            background: url(./../img/signature.png) no-repeat;
+            background-size: contain;
+            background-position: top; 
         }
     }
 }
 
 .skills {
-    background-color: $dark-gray;
+    background: url(./../img/skills.jpg) 00% no-repeat;
+    background-size: cover;
 
     &__container {
         height: 560px;
