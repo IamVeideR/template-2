@@ -23,5 +23,19 @@ $('.clients__slider').slick({
     cssEase: 'ease-in-out',
     autoplay: true,
     autoplaySpeed: 5000,
-    draggable: false
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });

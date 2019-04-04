@@ -137,7 +137,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: $wrap;
+        max-width: $wrapL;
     }
 
     &__load {
@@ -151,13 +151,6 @@
             color: $text-gray;
             text-transform: uppercase;
             font-weight: bold;
-        }
-    }
-}
-@media (max-width: $mobileL) {
-    .skills {
-        &__data {
-            width: 100%;
         }
     }
 }
@@ -178,6 +171,7 @@
         overflow: hidden;
         object-fit: cover;
         background-color: $dark-gray;
+        cursor: pointer;
     }
 }
 
@@ -262,5 +256,14 @@
     }
     &__author {
         color: white;
+    }
+}
+@media (max-width: $mobileL) {
+    .testimonials {
+        height: initial;
+        
+        .slick-dots { 
+            padding-bottom: 10px;
+        }
     }
 }
