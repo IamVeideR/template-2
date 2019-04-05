@@ -4,7 +4,7 @@ mixin headerMenuLink(name, href)
         
 .header
     .header__container.container
-        .header__logo
+        a.header__logo
             i.header__logo__icon.far.fa-gem
         .header__menu
             ul.header__menu__list
@@ -15,6 +15,6 @@ mixin headerMenuLink(name, href)
                 +headerMenuLink('Services', '#services')
                 +headerMenuLink('Testimonials', '#testimonials')
                 +headerMenuLink('Contact', '#contact')  
-        .header__menu__dropdown
+        a.header__menu__dropdown
             i.fas.fa-bars
                                                

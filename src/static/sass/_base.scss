@@ -8,6 +8,7 @@ body * {
 }
 a {
     color: $black;
+    transition-duration: 0.2s;
 }
 p {
     font-family: 'Nunito Sans', sans-serif;
@@ -39,6 +40,7 @@ input, textarea {
     background-color: $turquoise;
     color: white;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
 .base-button:hover {
     background-color: $darkturquoise;
