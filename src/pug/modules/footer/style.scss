@@ -9,21 +9,36 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__left-side {
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    &__right-side {
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+        
     }
     &__contacts {
-        padding-left: 150px;
+        padding-right: 10px;
+        padding-left: 50px;
     }
     &__menu {
         display: flex;
         justify-content: space-between; 
         flex-wrap: wrap;
-        padding-left: 50px;
 
         &__list {
             padding: 0 25px;
         }
     }
     &__socials {
+        padding-left: 20px;
         padding-right: 30px;
     }
 
@@ -38,5 +53,24 @@
         padding-bottom: 20px;
         font-size: 18px;
         color: $light-gray;
+    }
+}
+
+@media (max-width: $laptopXs) {
+    .footer {
+        height: initial;
+
+        &__left-side {
+            width: 100%;
+            justify-content: center;
+        }
+        &__right-side {
+            width: 100%;
+            justify-content: center;
+        }
+        &__contacts {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
     }
 }

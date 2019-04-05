@@ -9,6 +9,8 @@
         width: 40px;
         height: 40px;
         font-size: 40px;
+        padding-bottom: 15px;
+        cursor: pointer;
     }
     &__menu {
         &__list {
@@ -29,9 +31,28 @@
             // text-decoration: underline;
             color: $darkturquoise;
         }
+        &__dropdown {
+            width: 40px;
+            height: 40px;
+            color: $black;
+            cursor: pointer;
+            display: none;
+        }
     }
 
     .active {
         color:  $turquoise;
+    }
+}
+
+@media (max-width: $tablet) {
+    .header {
+        &__menu {
+            display: none;
+
+            &__dropdown {
+                display: block;
+            }
+        }
     }
 }

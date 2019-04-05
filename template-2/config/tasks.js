@@ -3,5 +3,7 @@ module.exports = [
     './template-2/tasks/sass',
     './template-2/tasks/serve',
     './template-2/tasks/watch',
-    './template-2/tasks/script'
+    './template-2/tasks/script',
+    './template-2/tasks/img',
+    './template-2/tasks/fonts'
 ];

@@ -9,3 +9,11 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: $mobileL) {
+    .numbers {
+        &__container {
+            height: initial;
+        }
+    }
+}
