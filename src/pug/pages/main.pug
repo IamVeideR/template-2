@@ -47,44 +47,65 @@ html(lang="ru")
             .work__works
                 -
                     var works = {
-                        image: '1'
+                        image: 'product-1.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '2'
+                        image: 'product-2.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '3'
+                        image: 'product-3.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '4'
+                        image: 'product-4.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '5'
+                        image: 'product-5.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '6'
+                        image: 'product-6.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '7'
+                        image: 'product-7.jpg'
                     }
                 include ../modules/works/module
                 -
                     var works = {
-                        image: '8'
+                        image: 'product-8.jpg'
                     }
                 include ../modules/works/module
+            .work__extra-works
+                -
+                    var works = {
+                        image: 'product-9.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-10.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-11.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-12.jpg'
+                    }
+                include ../modules/works/module            
             .work__load
                 a.work__load__link Load More Work
         a(name='process')
@@ -97,7 +118,8 @@ html(lang="ru")
             include ../modules/title/module
             .process__span
                 .process__video
-                    video(controls width="100%" height="100%")
+                    video(controls width="100%" height="100%" poster='static/img/video-preview.jpg')
+                        source(src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4")
         a(name='services')
         .services
             .services__container.container

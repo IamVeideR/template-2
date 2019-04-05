@@ -156,6 +156,17 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+        &__link:hover {
+            color: $text-gray-hover;
+        }
+    }
+    &__extra-works {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: $wrapL;
+        display: none;
     }
 }
 .process {
@@ -176,6 +187,10 @@
         object-fit: cover;
         background-color: $dark-gray;
         cursor: pointer;
+        
+        video[poster]{
+            object-fit: cover;
+            }
     }
 }
 
@@ -270,4 +285,9 @@
             padding-bottom: 10px;
         }
     }
+}
+
+.clients {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }

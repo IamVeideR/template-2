@@ -12,6 +12,9 @@
         padding-bottom: 15px;
         cursor: pointer;
     }
+    &__logo:hover {
+        color: $darkturquoise;
+    }
     &__menu {
         &__list {
             display: flex;
@@ -28,7 +31,6 @@
             padding: 6px;
         }
         &__link:hover {
-            // text-decoration: underline;
             color: $darkturquoise;
         }
         &__dropdown {
@@ -37,6 +39,9 @@
             color: $black;
             cursor: pointer;
             display: none;
+        }
+        &__dropdown:hover {
+            color: $darkturquoise;
         }
     }
 
