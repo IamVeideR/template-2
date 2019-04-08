@@ -76,7 +76,7 @@
 }
 
 .skills {
-    background: url(./../img/skills.jpg) 00% no-repeat;
+    background: url(./../img/skills.jpg) 0% no-repeat;
     background-size: cover;
 
     &__container {
@@ -290,4 +290,84 @@
 .clients {
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.designer {
+    background-color: $gray;
+
+    .title {
+        padding: 95px 0 85px;
+    
+        &__name {
+            font-size: 36px;
+            padding-bottom: 25px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+}
+
+.about-me {
+
+    &__banner {
+        background: url(./../img/author-photo.jpg) 50% 20% no-repeat;
+        background-size: cover;
+        
+        .title {
+            padding: 110px 0 105px;
+            color: white;
+
+            &__name {
+                font-size: 36px;
+                padding-bottom: 25px;
+            }
+            &__text {
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        
+        .banner {
+            &__data {
+                padding-top: 120px;
+                .about__title__text {
+                    padding-bottom: 20px;
+                }
+                .about__title__span {
+                    margin: 40px 0;
+                    width: 60%;
+                    padding-bottom: 15%;
+                }
+            }
+            @media (min-width: $laptopLg){
+                &__data {
+                    width: 40%;
+                }
+            }
+        }
+
+    }
+    &__order {
+        .title {
+            padding-bottom: 30px;
+        }
+        .order {
+            &__button {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+.about-description {
+    background: url(./../img/about-me.jpg) 100% 0% no-repeat;
+    background-size: cover;
 }

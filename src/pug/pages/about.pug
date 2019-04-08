@@ -1,0 +1,34 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'About'
+    - header = 'true'
+    
+
+block content
+        .about-me__banner
+            -
+                var title = {
+                    name: 'Amelia Woods',
+                    text: 'I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.'
+                }
+            include ../modules/title/module
+        include ../modules/numbers/module
+        .about-description
+            .about-me__container.container
+                .banner__data
+                    h1.about__title__name About Me
+                    p.about__title__text Given let waters air sea had you`ll, may seed abundantly fish. Were, you`ll earth forth winged above brought. Own darkness they`re him can`t fourth sea place have.
+                    p.about__title__text So the above May stars cattle fruitful face shall. Tree it, winged. Every signs male firmament us. Morning him. 
+                    .about__title__span
+                        .about__title__signature
+        .about-me__order
+            .order__container.container
+                -
+                    var title = {
+                        name: 'Need a Project?',
+                        text: 'Let us know what you`re looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
+                    }
+                include ../modules/title/module  
+                .order__button
+                    a.base-button Let`s Talk
