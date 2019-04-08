@@ -1,0 +1,77 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Home'
+    - header = 'true'
+    
+
+block content
+        .designer
+            -
+                var title = {
+                    name: 'UI/UX & Graphic Designer',
+                    text: 'I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.'
+                }
+            include ../modules/title/module
+        .work
+            .work__works
+                -
+                    var works = {
+                        image: 'product-1.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-2.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-3.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-4.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-5.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-6.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-7.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-8.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-9.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-10.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-11.jpg'
+                    }
+                include ../modules/works/module
+                -
+                    var works = {
+                        image: 'product-12.jpg'
+                    }
+                include ../modules/works/module 

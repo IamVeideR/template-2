@@ -1,21 +1,17 @@
-doctype html
-html(lang="ru")
-    head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        title Piroll
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Nunito+Sans", rel="stylesheet")
-        link(href="./../build/static/css/main.css", rel="stylesheet") 
-        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
-    body
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Piroll'
+    
+
+block content
         .banner
             include ../modules/header/module
             .banner__container.container
                 .banner__data
                     h1.banner__title We Design and Develop
                     p.banner__text We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.
-                    a.banner__button.base-button Contact Us
+                    a(href='contact.html').banner__button.base-button Contact Us
         a(name='about')                    
         .about.container
             .about__title 
@@ -249,7 +245,7 @@ html(lang="ru")
                 -
                     var title = {
                         name: 'Need a Project?',
-                        text: 'Let us know what you`rw looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
+                        text: 'Let us know what you`re looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
                     }
                 include ../modules/title/module  
                 .order__form
@@ -259,8 +255,3 @@ html(lang="ru")
                         input.order__input__title(type="text", name="Title", placeholder="Your Title")
                         textarea.order__textarea(name="Comment", placeholder="Your Comment")
                         button.order__button.base-button(type="submit") Send Message
-        include ../modules/footer/module
-        script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")
-        script(type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
-        script(type="text/javascript" src="./../build/static/js/libs/slick.min.js")
-        script(src="./../build/static/js/main.js")
