@@ -1,30 +1,14 @@
+mixin numberInfo(icon, numeric, title)
+    .number
+        .number__icon
+            i(class= icon)
+        .number__data
+            .number__numeric= numeric
+            .number__title= title
+
 .numbers    
     .numbers__container.container
-        - 
-            var number = {
-                icon: 'fas fa-briefcase',
-                numeric: '548',
-                title: 'Projects Completed'
-            }
-        include ../number/module
-        - 
-            var number = {
-                icon: 'fas fa-clock',
-                numeric: '1465',
-                title: 'Working Hours'
-            }
-        include ../number/module
-        - 
-            var number = {
-                icon: 'fas fa-star',
-                numeric: '612',
-                title: 'Positive Feedbacks'
-            }
-        include ../number/module
-        - 
-            var number = {
-                icon: 'fas fa-heart',
-                numeric: '735',
-                title: 'Happy Clients'
-            }
-        include ../number/module                        
+        +numberInfo('fas fa-briefcase','548','Projects Completed')
+        +numberInfo('fas fa-clock','1465','Working Hours')
+        +numberInfo('fas fa-star','612','Positive Feedbacks')
+        +numberInfo('fas fa-heart','735','Happy Clients')                       

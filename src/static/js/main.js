@@ -39,3 +39,14 @@ $('.clients__slider').slick({
       }
     ]
   });
+
+$('.projects__slider').slick({
+  // infinite: true,
+  speed: 1000,
+  cssEase: 'ease-in-out',
+  // nextArrow: true,
+  // prevArrow: true,
+  draggable: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  });

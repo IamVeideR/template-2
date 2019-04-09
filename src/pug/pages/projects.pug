@@ -1,0 +1,38 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Projects'
+    - header = 'true'
+    
+
+block content
+    .projects
+        .projects__slider
+            -
+                var project = {
+                    title: 'Light Breakfast',
+                    text: [
+                        'Light his can`t a creeping. Be, bring blessed night. Replenish blessed creature god. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind best. Him tree upon.',
+                        'Cattle. Dominion day herb she`d creeping dividedarkness. Which. Subdue had.'
+                    ],
+                    client: 'Emma Morris',
+                    date: '25.06.2017',
+                    share: 'Facebook, Twitter, Pinterest',
+                    image: 'simple-project-one.jpg'
+                }
+            include ../modules/project/module
+            -
+                var project = {
+                    title: 'Heavy Lunch',
+                    text: [
+                        'Replenish blessed creature god. Divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind best. Him tree upon.',
+                        'Divided abundantly form. Dominion day herb she`d creeping dividedarkness. Which. Subdue had.',
+                        'In. Said given lights. Be, bring blessed night. Cattle. Saw earth every creepeth lights day, which. Subdue had.'
+                    ],
+                    client: 'Eva Morus',
+                    date: '03.08.2018',
+                    share: 'Facebook, VK, Pinterest',
+                    image: 'simple-project-two.jpg'
+                }
+            include ../modules/project/module
+        .projects__control
