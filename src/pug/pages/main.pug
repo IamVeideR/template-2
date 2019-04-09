@@ -248,10 +248,4 @@ block content
                         text: 'Let us know what you`re looking for in agency. We`ll take a look and see if this could be the start of something beautiful. '
                     }
                 include ../modules/title/module  
-                .order__form
-                    form.form(action="#")
-                        input.order__input__name(type="text", name="Name", placeholder="Your Name")
-                        input.order__input__mail(type="text", name="Email", placeholder="Your Email")
-                        input.order__input__title(type="text", name="Title", placeholder="Your Title")
-                        textarea.order__textarea(name="Comment", placeholder="Your Comment")
-                        button.order__button.base-button(type="submit") Send Message
+                include ../modules/order-form/module

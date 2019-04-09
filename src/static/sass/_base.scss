@@ -3,22 +3,27 @@ body {
     color: $black;
     font-size: 12px;
 }
+
 body * {
     font-family: 'Montserrat', sans-serif;
 }
+
 a {
     color: $black;
     transition-duration: 0.2s;
 }
+
 p {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     color: $text-gray;
 }
+
 h1 {
     font-size: 30px;
     font-weight: bold;
 }
+
 input, textarea {
     border: none;
     box-sizing: border-box;
@@ -29,6 +34,7 @@ input, textarea {
     color: $black;
     resize: none;
 }
+
 .base-button {
     padding: 20px 40px;
     box-sizing: border-box;
@@ -42,9 +48,11 @@ input, textarea {
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 .base-button:hover {
     background-color: $darkturquoise;
 }
+
 .container {
     margin: 0 auto;
     max-width: 1160px;
@@ -52,15 +60,21 @@ input, textarea {
     box-sizing: border-box;
 }
 
+.active {
+    color:  $turquoise;
+}
+
 .fas, .far {
     font-size: 36px;
 }
+
 @media (max-width: $desktop) {
     .container {
         padding-right: 15px;
         padding-left: 15px;
     }
 }
+
 @media (max-width: $mobileL) {
     .container {
         padding-right: 5px;

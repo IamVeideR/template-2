@@ -1,0 +1,16 @@
+mixin projectInfo(title, text)
+    li.contact__info__item
+        p.contact__info__item__title= title+': '
+        p.contact__info__item__text= text  
+        
+.project__slide
+    .project
+        .project__container
+            .project__title= project.title
+            each val in project.text
+                p.project__text= val  
+            ul.project__info__list
+                +projectInfo('Client', project.client)
+                +projectInfo('Date', project.date)
+                +projectInfo('Share', project.share)
+        .project__image(style="background-image: url(static/img/"+project.image+");")

@@ -3,7 +3,26 @@ extends ../layout/base
 block variables
     - pageTitle = 'Contact'
     - header = 'true'
-    
+    - contact = 'active'
+mixin contactInfo(title, text)
+    li.contact__info__item
+        p.contact__info__item__title= title+': '
+        p.contact__info__item__text= text  
 
 block content
+    .contact 
+        .contact__container.container
+            .contact__info
+                h2.contact__info__title Contact Info:
+                p.contact__info__text To give give beeginning divide, cattle. Give moving won`t, there the abundantly she`d brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry.
+                ul.contact__info__list
+                    +contactInfo('Address', '10111 Santa Monica Boulevard, LA')
+                    +contactInfo('Phone', '+44 987 065 908')
+                    +contactInfo('Email', 'info@example.com')
+                    +contactInfo('Fax', '+44 987 065 909')
+            .contact__order
+                include ../modules/order-form/module
+            .contact__map
+                .contact__map__span
+                    .contact__map__image
     
