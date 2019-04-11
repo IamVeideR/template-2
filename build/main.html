@@ -9,13 +9,13 @@
     <link href="./../build/static/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
-  <body>
+  <body><a name="home"></a>
     <div class="banner">
       <div class="header">
         <div class="header__container container"><a class="header__logo" href="home.html"><i class="header__logo__icon far fa-gem"></i></a>
           <div class="header__menu">
             <ul class="header__menu__list">
-                    <li class="header__menu__item"><a class="active header__menu__link" href="#">Home</a></li>
+                    <li class="header__menu__item"><a class="active header__menu__link" href="#home">Home</a></li>
                     <li class="header__menu__item"><a class="header__menu__link" href="#about">About</a></li>
                     <li class="header__menu__item"><a class="header__menu__link" href="#work">Work</a></li>
                     <li class="header__menu__item"><a class="header__menu__link" href="#process">Process</a></li>
@@ -23,7 +23,20 @@
                     <li class="header__menu__item"><a class="header__menu__link" href="#testimonials">Testimonials</a></li>
                     <li class="header__menu__item"><a class="header__menu__link" href="#contact">Contact</a></li>
             </ul>
-          </div><a class="header__menu__dropdown"><i class="fas fa-bars"></i></a>
+          </div>
+          <div class="header__mobile__container">   
+            <div class="header__mobile">
+              <ul class="header__mobile__list">
+                      <li class="header__menu__item"><a class="active header__menu__link" href="#">Home</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#about">About</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#work">Work</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#process">Process</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#services">Services</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#testimonials">Testimonials</a></li>
+                      <li class="header__menu__item"><a class="header__menu__link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div><a class="header__menu__dropdown dropdown__close"><i class="fas fa-times"></i></a><a class="header__menu__dropdown dropdown__open"><i class="fas fa-bars"></i></a>
         </div>
       </div>
       <div class="banner__container container">
@@ -118,9 +131,27 @@
             <div class="works__image" style="background-image: url(static/img/product-1.jpg);"></div>
           </div>
         </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-1.jpg);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="works"> 
           <div class="works__span">
             <div class="works__image" style="background-image: url(static/img/product-2.jpg);"></div>
+          </div>
+        </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-2.jpg);"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="works"> 
@@ -128,9 +159,27 @@
             <div class="works__image" style="background-image: url(static/img/product-3.jpg);"></div>
           </div>
         </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-3.jpg);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="works"> 
           <div class="works__span">
             <div class="works__image" style="background-image: url(static/img/product-4.jpg);"></div>
+          </div>
+        </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-4.jpg);"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="works"> 
@@ -138,9 +187,27 @@
             <div class="works__image" style="background-image: url(static/img/product-5.jpg);"></div>
           </div>
         </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-5.jpg);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="works"> 
           <div class="works__span">
             <div class="works__image" style="background-image: url(static/img/product-6.jpg);"></div>
+          </div>
+        </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-6.jpg);"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="works"> 
@@ -148,35 +215,91 @@
             <div class="works__image" style="background-image: url(static/img/product-7.jpg);"></div>
           </div>
         </div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-7.jpg);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="works"> 
           <div class="works__span">
             <div class="works__image" style="background-image: url(static/img/product-8.jpg);"></div>
           </div>
         </div>
-      </div>
-      <div class="work__extra-works">
-        <div class="works"> 
-          <div class="works__span">
-            <div class="works__image" style="background-image: url(static/img/product-9.jpg);"></div>
-          </div>
-        </div>
-        <div class="works"> 
-          <div class="works__span">
-            <div class="works__image" style="background-image: url(static/img/product-10.jpg);"></div>
-          </div>
-        </div>
-        <div class="works"> 
-          <div class="works__span">
-            <div class="works__image" style="background-image: url(static/img/product-11.jpg);"></div>
-          </div>
-        </div>
-        <div class="works"> 
-          <div class="works__span">
-            <div class="works__image" style="background-image: url(static/img/product-12.jpg);"></div>
+        <div class="works__container">
+          <div class="works__increase">
+            <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+              <div class="works__span">         
+                <div class="works__image" style="background-image: url(static/img/product-8.jpg);"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="work__load"><a class="work__load__link">Load More Work</a></div>
+      <div class="work__extra-container">
+        <div class="work__extra-works">
+          <div class="works"> 
+            <div class="works__span">
+              <div class="works__image" style="background-image: url(static/img/product-9.jpg);"></div>
+            </div>
+          </div>
+          <div class="works__container">
+            <div class="works__increase">
+              <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+                <div class="works__span">         
+                  <div class="works__image" style="background-image: url(static/img/product-9.jpg);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works"> 
+            <div class="works__span">
+              <div class="works__image" style="background-image: url(static/img/product-10.jpg);"></div>
+            </div>
+          </div>
+          <div class="works__container">
+            <div class="works__increase">
+              <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+                <div class="works__span">         
+                  <div class="works__image" style="background-image: url(static/img/product-10.jpg);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works"> 
+            <div class="works__span">
+              <div class="works__image" style="background-image: url(static/img/product-11.jpg);"></div>
+            </div>
+          </div>
+          <div class="works__container">
+            <div class="works__increase">
+              <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+                <div class="works__span">         
+                  <div class="works__image" style="background-image: url(static/img/product-11.jpg);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works"> 
+            <div class="works__span">
+              <div class="works__image" style="background-image: url(static/img/product-12.jpg);"></div>
+            </div>
+          </div>
+          <div class="works__container">
+            <div class="works__increase">
+              <div class="works__increase__works"><a class="works__increase__close"><i class="fas fa-times"> </i></a>
+                <div class="works__span">         
+                  <div class="works__image" style="background-image: url(static/img/product-12.jpg);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__load"><a class="work__load__link to-open">Load More Work</a></div>
     </div><a name="process"></a>
     <div class="process container">
       <div class="title"> 
@@ -262,12 +385,12 @@
         </div>
         <div class="client">
           <div class="client__span">
-            <div class="client__image" style="background-image: url(static/img/client-mountain.png);"></div>
+            <div class="client__image" style="background-image: url(static/img/client-mountainbike.png);"></div>
           </div>
         </div>
         <div class="client">
           <div class="client__span">
-            <div class="client__image" style="background-image: url(static/img/client-mountainbike.png);"></div>
+            <div class="client__image" style="background-image: url(static/img/client-mountain.png);"></div>
           </div>
         </div>
         <div class="client">
@@ -282,12 +405,12 @@
         </div>
         <div class="client">
           <div class="client__span">
-            <div class="client__image" style="background-image: url(static/img/client-mountain.png);"></div>
+            <div class="client__image" style="background-image: url(static/img/client-mountainbike.png);"></div>
           </div>
         </div>
         <div class="client">
           <div class="client__span">
-            <div class="client__image" style="background-image: url(static/img/client-mountainbike.png);"></div>
+            <div class="client__image" style="background-image: url(static/img/client-mountain.png);"></div>
           </div>
         </div>
         <div class="client">
@@ -314,6 +437,7 @@
         </div>
       </div>
     </div>
+    <div class="scroll-up__container"><a class="scroll-up" href="#home"><i class="fas fa-angle-up"></i></a></div>
     <div class="footer">
       <div class="footer__container container">
         <div class="footer__left-side">

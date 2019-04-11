@@ -1,0 +1,1 @@
+export { default as Works } from '../../pug/modules/works';

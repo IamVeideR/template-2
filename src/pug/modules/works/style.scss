@@ -1,7 +1,7 @@
 .works {
     position: relative;
     width: 25%;
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
     
 
     &__span {
@@ -15,18 +15,101 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // overflow: hidden;
         background-size: cover;
         background-color: $dark-gray;
         background-position: center; 
         cursor: pointer;
     }
+
+    &__container {
+        display: none;
+    }
+    &__increase {
+        position: fixed;
+        z-index: 30;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(20,20,20,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+        &__works {
+            width: 40%;
+            position: relative;
+        }
+        &__works * {
+            cursor: default;
+        }
+        &__close {
+            position: absolute;
+            z-index: 40;
+            top: 5px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition-duration: 0.25s;
+
+            i {
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+        &__close:hover {
+            opacity: 0.8;
+        }
+    }
 }
 
+.works--hover {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    background-color: $black;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.25s;
+}
+
+.works--hover:hover {
+    opacity: 0.9;
+}
+
+.about-page {
+    .works--hover {
+        background-color: $turquoise;  
+    }
+    .works--hover:hover {
+        opacity: 0.8;  
+    }
+}
 
 @media (max-width: $laptopXs) {
     .works {
         width: 50%;
+
+        &__container {
+            display: none!important;
+        }
+    }
+    .works--hover {
+        display: none!important;
     }
 }
 @media (max-width: $mobileL) {

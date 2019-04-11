@@ -5,6 +5,7 @@ block variables
     
 
 block content
+        a(name='home')
         .banner
             include ../modules/header/module
             .banner__container.container
@@ -81,29 +82,30 @@ block content
                         image: 'product-8.jpg'
                     }
                 include ../modules/works/module
-            .work__extra-works
-                -
-                    var works = {
-                        image: 'product-9.jpg'
-                    }
-                include ../modules/works/module
-                -
-                    var works = {
-                        image: 'product-10.jpg'
-                    }
-                include ../modules/works/module
-                -
-                    var works = {
-                        image: 'product-11.jpg'
-                    }
-                include ../modules/works/module
-                -
-                    var works = {
-                        image: 'product-12.jpg'
-                    }
-                include ../modules/works/module            
+            .work__extra-container
+                .work__extra-works
+                        -
+                            var works = {
+                                image: 'product-9.jpg'
+                            }
+                        include ../modules/works/module
+                        -
+                            var works = {
+                                image: 'product-10.jpg'
+                            }
+                        include ../modules/works/module
+                        -
+                            var works = {
+                                image: 'product-11.jpg'
+                            }
+                        include ../modules/works/module
+                        -
+                            var works = {
+                                image: 'product-12.jpg'
+                            }
+                        include ../modules/works/module 
             .work__load
-                a.work__load__link Load More Work
+                a.work__load__link.to-open Load More Work
         a(name='process')
         .process.container
             -
@@ -206,12 +208,12 @@ block content
                 include ../modules/client/module     
                 - 
                     var client = {
-                        image: 'client-mountain.png'
+                        image: 'client-mountainbike.png'
                     }
                 include ../modules/client/module
                 - 
                     var client = {
-                        image: 'client-mountainbike.png'
+                        image: 'client-mountain.png'
                     }
                 include ../modules/client/module
                 - 
@@ -226,12 +228,12 @@ block content
                 include ../modules/client/module
                 - 
                     var client = {
-                        image: 'client-mountain.png'
+                        image: 'client-mountainbike.png'
                     }
                 include ../modules/client/module
                 - 
                     var client = {
-                        image: 'client-mountainbike.png'
+                        image: 'client-mountain.png'
                     }
                 include ../modules/client/module
                 - 
@@ -249,3 +251,4 @@ block content
                     }
                 include ../modules/title/module  
                 include ../modules/order-form/module
+        include ../modules/scroll-up/module
