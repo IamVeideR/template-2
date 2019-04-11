@@ -8,13 +8,26 @@ mixin headerMenuLink(name, href)
             i.header__logo__icon.far.fa-gem
         .header__menu
             ul.header__menu__list
-                +headerMenuLink('Home', '#')(class="active")
+                +headerMenuLink('Home', '#home')(class="active")
                 +headerMenuLink('About', '#about')
                 +headerMenuLink('Work', '#work')
                 +headerMenuLink('Process', '#process')
                 +headerMenuLink('Services', '#services')
                 +headerMenuLink('Testimonials', '#testimonials')
                 +headerMenuLink('Contact', '#contact')  
-        a.header__menu__dropdown
+        .header__mobile__container    
+            .header__mobile
+                ul.header__mobile__list
+                    +headerMenuLink('Home', '#')(class="active")
+                    +headerMenuLink('About', '#about')
+                    +headerMenuLink('Work', '#work')
+                    +headerMenuLink('Process', '#process')
+                    +headerMenuLink('Services', '#services')
+                    +headerMenuLink('Testimonials', '#testimonials')
+                    +headerMenuLink('Contact', '#contact')
+        a.header__menu__dropdown.dropdown__close
+            i.fas.fa-times
+        a.header__menu__dropdown.dropdown__open
             i.fas.fa-bars
+        
                                                

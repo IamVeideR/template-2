@@ -11,5 +11,13 @@ mixin headerMenuLink(name, href)
                 +headerMenuLink('Home', 'home.html')(class= home)
                 +headerMenuLink('About', 'about.html')(class= about)
                 +headerMenuLink('Contact', 'contact.html')(class= contact)
-        a.header__menu__dropdown
+        .header__mobile__container    
+            .header__mobile
+                ul.header__mobile__list
+                    +headerMenuLink('Home', 'home.html')(class= home)
+                    +headerMenuLink('About', 'about.html')(class= about)
+                    +headerMenuLink('Contact', 'contact.html')(class= contact)
+        a.header__menu__dropdown.dropdown__close
+            i.fas.fa-times
+        a.header__menu__dropdown.dropdown__open
             i.fas.fa-bars

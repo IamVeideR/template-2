@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 200;
     }
     &__logo {
         width: 40px;
@@ -11,6 +12,8 @@
         font-size: 40px;
         padding-bottom: 15px;
         cursor: pointer;
+        z-index: 200;
+        left: 5px;
     }
     &__logo:hover {
         color: $darkturquoise;
@@ -39,21 +42,81 @@
             color: $black;
             cursor: pointer;
             display: none;
+            z-index: 200;
+            right: 5px;
         }
         &__dropdown:hover {
             color: $darkturquoise;
         }
     }
+
+    &__mobile {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 99px;
+        left: 0;
+        height: 100%;
+        background-color: white;
+        
+        &__container {
+            display: none;
+
+            .header {
+                &__mobile {
+                    display: flex;
+                    justify-content: center;
+                }
+                &__menu {
+                    &__item {
+                        text-align: center;
+                        margin: 10px;
+                    }
+                    &__link {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
+.dropdown {
+    &__close {
+        display: none;
+    }
+}
 @media (max-width: $tablet) {
     .header {
         &__menu {
             display: none;
-
-            &__dropdown {
-                display: block;
+        }
+    }
+    .dropdown {
+        &__open {
+            display: block;
+        }
+    }
+}
+@media (min-width: $tablet+1px) {
+    .header {
+        &__container {
+            position: static!important;
+            background-color: transparent!important;
+        }
+        &__mobile {
+            &__container {
+                display: none!important;
             }
+        }
+        
+    }
+    .dropdown {
+        &__close {
+            display: none!important;
+        }
+        &__open {
+            display: none!important;
         }
     }
 }

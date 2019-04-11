@@ -160,13 +160,20 @@
             color: $text-gray-hover;
         }
     }
+    &__extra-container {
+        display: none;
+    }
     &__extra-works {
         margin: 0 auto;
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         max-width: $wrapL;
-        display: none;
+        display: flex;
+        // display: none;
+
+        // &--load {
+        //     display: flex;
+        // }
     }
 }
 .process {

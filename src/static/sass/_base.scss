@@ -10,7 +10,7 @@ body * {
 
 a {
     color: $black;
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
 }
 
 p {
@@ -46,7 +46,7 @@ input, textarea {
     background-color: $turquoise;
     color: white;
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
 }
 
 .base-button:hover {
