@@ -22,13 +22,28 @@
     &__button {
         margin: 15px auto;
     }
+    &__message {
+        width: 90%;
+        max-width: 450px; 
+        background-color: white;
+        font-size: 18px;
+        text-align: center;
+        height: 100px;
+        border-radius: 3px;
+        
+        .works__text {
+            padding-top: 40px;
+        }
+    }
     form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 }
-
+.order__some-container {
+    display: none;
+}
 @media (max-width: $mobileL) {
     .order-form {
         &__input {
