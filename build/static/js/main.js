@@ -64,6 +64,7 @@ $('.work__load__link').toggle(function() {
 $('.works').hover(
   function() {
     $(this).append( $("<div class='works--hover'><i class='fas fa-eye'></i></div>") );
+    $(this).addClass('works--hovered')
   }, function() {
     $(this).find( ".works--hover" ).remove();
   }
@@ -89,6 +90,14 @@ $(".works__increase__close").on("click", () => {
   $(".works__container").hide();
 });
 
+
+$(".order-form__button").on("click", () => {
+  $(".order__some-container").show();
+});
+
+$(".order__close").on("click", () => {
+  $(".order__some-container").hide();
+});
 
 
 $(".dropdown__open").on("click", () => {
